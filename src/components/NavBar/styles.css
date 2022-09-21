@@ -22,10 +22,6 @@ a{
 }
 
 .links{
-    position: absolute;
-    top: -700px;
-    left: -2000px;
-    right: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -69,10 +65,10 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 0 0 80% 0;
+    border-radius: 0 0 50% 0;
 }
 
-
+/*
 @media(min-width:768px) {
     .burguer {
         display: none;
@@ -87,3 +83,4 @@ a{
         display: inline;
     }
 }
+*/
