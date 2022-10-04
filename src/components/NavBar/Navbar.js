@@ -11,7 +11,7 @@ function Navbar() {
     }
     return (
         <div className='Navbar'>
-            <h2>Gamer<span>Zone</span></h2>
+            <h1>Gamer<span>Zone</span></h1>
             <div className={`links ${clicked ?`active` :``}`}>
                 <a onClick ={handleClick}href='/#h'>Home</a>
                 <a onClick ={handleClick}href='/#h'>Juegos</a>

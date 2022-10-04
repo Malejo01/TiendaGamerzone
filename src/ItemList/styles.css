@@ -1,0 +1,13 @@
+.ItemList {
+    background-color:#fff;
+    display: flex;
+    align-content:center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 60%;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid black;
+    }
+    
+    

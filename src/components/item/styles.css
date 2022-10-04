@@ -1,0 +1,16 @@
+.imagenProducto {
+    width: 80px;
+    height: 80px;
+}
+
+.items {
+    background-color:aliceblue;
+    display: flex;
+    align-content:center;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 0px;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    border: 1px solid black;
+    }
