@@ -3,7 +3,7 @@ import {useState} from 'react';
 import carrito from '../image/cart-plus.svg'
 import "./styles.css" 
 
-function Item(item) {
+function Item({item}) {
     const [stock, setStock] = useState(item.stock)
     const [contador, setContador] = useState(1);
     
