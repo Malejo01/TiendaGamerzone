@@ -6,7 +6,7 @@ import "./styles.css"
 
 function ItemListContainer() {
     const[loading,setLoading]=useState(true)
-  const[data,setData]=useState([])
+    const[data,setData]=useState([])
 
   useEffect(()=> {
     getFetch

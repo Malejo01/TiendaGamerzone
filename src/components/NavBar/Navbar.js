@@ -17,7 +17,6 @@ function Navbar() {
                 <a onClick ={handleClick}href='/#h'>Juegos</a>
                 <a onClick ={handleClick}href='/#h'>Consolas</a>
                 <a onClick ={handleClick}href='/#h'>Accesorios</a>
-                <a onClick ={handleClick}href='/#h'>Monitores</a>
                 <a onClick ={handleClick}href='/#h'>Contacto</a>
                 <a onClick ={handleClick}href='/#h'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
             </div>
