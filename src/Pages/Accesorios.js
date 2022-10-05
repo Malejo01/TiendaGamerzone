@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/NavBar/Navbar';
+import "./styles.css"
 
 export default function Accesorios () {
     return (

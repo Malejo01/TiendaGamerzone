@@ -12,10 +12,10 @@ function App() {
       <div className="App">
       <Routes>
         <Route exact path='/'  element={<Home/>}>Home</Route>
-        <Route exact path='/'  element={<Juegos/>}>Juegos</Route>
-        <Route exact path='/'  element={<Consolas/>}>Consolas</Route>
-        <Route exact path='/'  element={<Accesorios/>}>Accesorios</Route>
-        <Route exact path='/'  element={<Home/>}>Contacto</Route>
+        <Route exact path='/juegos'  element={<Juegos/>}>Juegos</Route>
+        <Route exact path='/consolas'  element={<Consolas/>}>Consolas</Route>
+        <Route exact path='/accesorios'  element={<Accesorios/>}>Accesorios</Route>
+        <Route exact path='/contacto'  element={<Home/>}>Contacto</Route>
         </Routes>
         
       </div>

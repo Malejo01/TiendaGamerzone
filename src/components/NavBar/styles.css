@@ -1,4 +1,4 @@
-h1{
+.TituloPagina{
     font-weight: 400;
     color: #fff;
     padding-left: 1rem;
@@ -69,6 +69,12 @@ a{
     border-radius: 0 0 50% 0;
 }
 
+.imagenCarrito {
+    background-color: white;
+    border-radius: 25%;
+    width: 2.5rem;
+    height: auto;
+}
 
 /*
 @media(min-width:768px) {

@@ -1,4 +1,6 @@
+import React from 'react';
 import NavBar from '../components/navbar/navbar.js';
+import "./styles.css"
 
 export default function Detalles () {
     return (
