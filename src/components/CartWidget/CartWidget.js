@@ -1,4 +1,6 @@
 import React from 'react'
+import imagenCarrito from '../image/carrito.png'
+import "./styles.css"
 
 function CartWidget() {
     return (

@@ -1,6 +1,5 @@
 import React, {useState}from 'react'
 import BurguerIcon from '../BurguerIcon/BurguerIcon'
-import imagenCarrito from '../image/carrito.png'
 import "./styles.css"
 
 function Navbar() {
@@ -18,7 +17,7 @@ function Navbar() {
                 <a onClick ={handleClick}href='/#h'>Consolas</a>
                 <a onClick ={handleClick}href='/#h'>Accesorios</a>
                 <a onClick ={handleClick}href='/#h'>Contacto</a>
-                <a onClick ={handleClick}href='/#h'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
+                
             </div>
             <div className='burguer'>
             <BurguerIcon clicked={clicked} handleClick={handleClick}/>
