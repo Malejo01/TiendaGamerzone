@@ -1,11 +1,11 @@
 import React from 'react'
-import NavBar from '../components/NavBar/Navbar';
+import Navbar from '../components/NavBar/Navbar';
 import "./styles.css"
 
 function Contacto() {
     return (
         <div>
-        <NavBar/>
+        <Navbar/>
         <h1>Ponte en contacto con nosotros</h1>
         <p>Aqui viene un formulario mamalon</p>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
-import carrito from '../image/cart-plus.svg'
+import carrito from '../Image/cart-plus.svg'
 import "./styles.css" 
 
 function Item({item}) {
