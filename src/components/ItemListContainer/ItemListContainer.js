@@ -14,7 +14,7 @@ function ItemListContainer(tipoDeFiltro) {
     .catch(err=>console.log(err))
     .finally(()=>setLoading(false))
 
-    console.log("Llego a item list container", {tipoDeFiltro})
+    console.log("Llego a item list container", (tipoDeFiltro))
 
   },[])
     return (
@@ -22,7 +22,7 @@ function ItemListContainer(tipoDeFiltro) {
             <h1>Nuestros productos mas vendidos</h1>
             {
         loading ? <h2>Cargando por favor espere</h2> :
-        <ItemList data={data} tipoDeFiltro={tipoDeFiltro}/>
+        <ItemList data={data} tipoDeFiltro={(tipoDeFiltro)}/>
       }
         </div>
     )
