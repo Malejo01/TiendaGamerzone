@@ -12,12 +12,12 @@ function Navbar() {
     return (
         <div className='Navbar'>
             <h1 className='TituloPagina'>Gamer<span>Zone</span></h1>
-            <div className={`links ${clicked ?`active` :``}`}>
-                <a onClick ={handleClick}href='/#h'>Home</a>
-                <a onClick ={handleClick}href='/#h'>Juegos</a>
-                <a onClick ={handleClick}href='/#h'>Consolas</a>
-                <a onClick ={handleClick}href='/#h'>Accesorios</a>
-                <a onClick ={handleClick}href='/#h'>Contacto</a>
+            <div>
+                <a href='/'>Home</a>
+                <a href='/Juegos'>Juegos</a>
+                <a href='/Consolas'>Consolas</a>
+                <a href='/Accesorios'>Accesorios</a>
+                <a href='/Contacto'>Contacto</a>
                 <CartWidget/>
             </div>
             <div className='burguer'>

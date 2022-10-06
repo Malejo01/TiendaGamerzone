@@ -1,12 +1,14 @@
 import React from 'react';
-import NavBar from '../components/navbar/navbar.js';
+import NavBar from '../components/NavBar/Navbar';
+import ItemDetailsContainer from '../ItemDetailsContainer/ItemDetailsContainer';
 import "./styles.css"
 
 export default function Detalles () {
     return (
         <div>
             <NavBar/>
-            <h1>Esta es la seccion de descripcion de detalles de un producto</h1>
+            <h1>Esta es la seccion de detalle de un producto</h1>
+            <ItemDetailsContainer/>
         </div>
     )
 }

@@ -9,7 +9,7 @@ function CartWidget() {
         setClicked(!clicked)
     }
     return (
-        <a onClick ={handleClick}href='/#h'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
+        <a onClick ={handleClick}href='/carrito'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
     )
 }
 
