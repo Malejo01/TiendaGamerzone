@@ -4,10 +4,11 @@ import  ItemListContainer  from '../ItemListContainer/ItemListContainer';
 import "./styles.css"
 
 export default function Home () {
+    let tipoDeFiltro = "ninguno"
     return (
         <div>
             <Navbar/>
-            <ItemListContainer/>
+            <ItemListContainer tipoDeFiltro={tipoDeFiltro}/>
         </div>
     )
 }

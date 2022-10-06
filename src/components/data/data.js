@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    tipo: "joystick",
+    tipo: "accesorio",
     nombre: "Joystick Original",
     precio: 50,
     imagen:
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 4,
-    tipo: "joystick",
+    tipo: "accesorio",
     nombre: "Joystick Alternativo",
     precio: 20,
     imagen: "https://i.blogs.es/094415/duke1/450_1000.jpg",
@@ -111,7 +111,7 @@ const getFetch = new Promise((res, rej) => {
   if (condition) {
     setTimeout(() => {
       res(data);
-    }, 2000);
+    },1000);
   } else {
     rej(console.log("No hay datos"));
   }
