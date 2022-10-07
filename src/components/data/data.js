@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    tipo: "consola",
+    tipo: "Consolas",
     nombre: "Xbox One",
     precio: 400,
     imagen: "https://m.media-amazon.com/images/I/61zjj2sgXML._SX466_.jpg",
@@ -12,7 +12,7 @@ const data = [
   },
   {
     id: 2,
-    tipo: "consola",
+    tipo: "Consolas",
     nombre: "Playstation 4",
     precio: 450,
     imagen:
@@ -24,7 +24,7 @@ const data = [
   },
   {
     id: 3,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Joystick Original",
     precio: 50,
     imagen:
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 4,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Joystick Alternativo",
     precio: 20,
     imagen: "https://i.blogs.es/094415/duke1/450_1000.jpg",
@@ -47,7 +47,7 @@ const data = [
   },
   {
     id: 5,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Auricular con Cable",
     precio: 15,
     imagen:
@@ -59,7 +59,7 @@ const data = [
   },
   {
     id: 6,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Auricular Inalambrico",
     precio: 30,
     imagen:
@@ -71,7 +71,7 @@ const data = [
   },
   {
     id: 7,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Cable HDMI",
     precio: 5,
     imagen: "https://pascalonline.com.ar/wp-content/uploads/2016/08/HDM.jpg",
@@ -82,7 +82,7 @@ const data = [
   },
   {
     id: 8,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Baterias",
     precio: 8,
     imagen:
@@ -94,7 +94,7 @@ const data = [
   },
   {
     id: 9,
-    tipo: "accesorio",
+    tipo: "Accesorios",
     nombre: "Pilas",
     precio: 15,
     imagen:

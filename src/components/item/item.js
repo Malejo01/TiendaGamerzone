@@ -27,7 +27,6 @@ function Item({item}) {
     }
 
     function verDetalles (item) {
-        <a href='/Contacto'>Contacto</a>
     }
 
     return (

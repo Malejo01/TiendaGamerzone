@@ -4,7 +4,7 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import "./styles.css"
 
 export default function Accesorios () {
-    let tipoDeFiltro = "accesorio"
+    let tipoDeFiltro = "Accesorios"
     return (
         <div>
             <Navbar/>

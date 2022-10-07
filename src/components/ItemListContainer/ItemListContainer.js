@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import getFetch from '../Data/data';
 import "./styles.css"
 
-function ItemListContainer(tipoDeFiltro) {
+function ItemListContainer({tipoDeFiltro}) {
     const[loading,setLoading]=useState(true)
     const[data,setData]=useState([])
 
@@ -22,7 +22,7 @@ function ItemListContainer(tipoDeFiltro) {
             <h1>Nuestros productos mas vendidos</h1>
             {
         loading ? <h2>Cargando por favor espere</h2> :
-        <ItemList data={data} tipoDeFiltro={(tipoDeFiltro)}/>
+        <ItemList data={data} tipoDeFiltro={tipoDeFiltro}/>
       }
         </div>
     )

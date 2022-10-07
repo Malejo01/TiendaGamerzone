@@ -4,7 +4,7 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import "./styles.css"
 
 export default function Consolas () {
-    let tipoDeFiltro = "consola"
+    let tipoDeFiltro = "Consolas"
     return (
         <div>
             <Navbar/>
