@@ -1,5 +1,5 @@
 import React, {useState}from 'react'
-import imagenCarrito from '../image/carrito.png'
+import imagenCarrito from '../Image/carrito.png'
 import "./styles.css"
 
 function CartWidget() {
