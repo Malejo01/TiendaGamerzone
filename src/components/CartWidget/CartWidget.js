@@ -1,15 +1,8 @@
-import React, {useState}from 'react'
-import imagenCarrito from '../Image/carrito.png'
-import "./styles.css"
+import React from 'react'
 
 function CartWidget() {
-    const [clicked,setClicked] = useState (false)
-    const handleClick = () => {
-        //cuando esta true lo pasa a false y viceversa
-        setClicked(!clicked)
-    }
     return (
-        <a onClick ={handleClick}href='/carrito'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
+        <a onClick ={handleClick}href='/#h'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
     )
 }
 
