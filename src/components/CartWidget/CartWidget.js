@@ -1,8 +1,9 @@
 import React from 'react'
+import imagenCarrito from '../Image/carrito.png'
 
 function CartWidget() {
     return (
-        <a onClick ={handleClick}href='/#h'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
+        <a href='/carrito'> <img src={imagenCarrito} alt="Carrito" className='imagenCarrito'></img></a>
     )
 }
 
