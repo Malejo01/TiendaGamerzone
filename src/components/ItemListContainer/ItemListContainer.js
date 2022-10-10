@@ -19,7 +19,6 @@ function ItemListContainer({tipoDeFiltro}) {
   },[])
     return (
         <div className='itemListContainer'>
-            <h1>Nuestros productos</h1>
             {
         loading ? <h2>Cargando por favor espere</h2> :
         <ItemList data={data} tipoDeFiltro={tipoDeFiltro}/>

@@ -8,7 +8,7 @@ export default function Accesorios () {
     return (
         <div>
             <Navbar/>
-            <h1>Esta es la seccion de {tipoDeFiltro}</h1>
+            <h1>Sección de {tipoDeFiltro}</h1>
             <ItemListContainer tipoDeFiltro={tipoDeFiltro}/>
         </div>
     )

@@ -1,6 +1,7 @@
 import React, {useState}from 'react'
 import BurguerIcon from '../BurguerIcon/BurguerIcon'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom';
 import "./styles.css"
 
 function Navbar() {
@@ -11,14 +12,15 @@ function Navbar() {
     }
     return (
         <div className='Navbar'>
-            <h1 className='TituloPagina'>Gamer<span>Zone</span></h1>
+            <a href='/'><h1 className='TituloPagina'>Gamer<span>Zone</span></h1></a>
             <div>
-                <a href='/'>Home</a>
-                <a href='/Juegos'>Juegos</a>
-                <a href='/Consolas'>Consolas</a>
-                <a href='/Accesorios'>Accesorios</a>
-                <a href='/Contacto'>Contacto</a>
+                <Link to='/'>Home</Link>
+                <Link to='/Juegos'>Juegos</Link>
+                <Link to='/Consolas'>Consolas</Link>
+                <Link to='/Accesorios'>Accesorios</Link>
+                <Link to='/Contacto'>Contacto</Link>
                 <CartWidget/>
+                <span className='itemTotal'>0</span>
             </div>
             <div className='burguer'>
             <BurguerIcon clicked={clicked} handleClick={handleClick}/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import carrito from '../Image/cart-plus.svg'
 import "./styles.css" 
 
@@ -26,8 +27,6 @@ function Item({item}) {
         }
     }
 
-    function verDetalles (item) {
-    }
 
     return (
         <tr className="items">
@@ -43,7 +42,9 @@ function Item({item}) {
                     <input value ="+"type="submit" onClick={() => agregarAlContador()}/></td>
                 <td className="botonCarrito">
                     <input value ="Comprar"type="submit" onClick={() => agregarAlCarrito()}/>
-                    <input value ="Ver Detalles"type="submit" onClick={() => verDetalles(item)}/></td>
+                    <button>
+                    <NavLink to={`/detalles/${item}`} className="NavLink">Ver Detalles</NavLink>    
+                    </button></td>
         </tr>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import ItemDetailsContainer from '../ItemDetailsContainer/ItemDetailsContainer'
 import Item from '../Item/item'
 import "./styles.css"
 
@@ -10,13 +9,12 @@ function ItemList ({data, tipoDeFiltro}) {
     console.log("llego al itemList", (tipoDeFiltro)," y ", {filteredData}," y ", {data})
     return (
         <div className='ItemList'>
-            <h3> Nuestros Productos</h3>
+            <h3> {tipoDeFiltro}</h3>
             <table>
                 <tbody>
-                { tipoDeFiltro==="ninguno" ? data.map(i=>{ return <Item  key ={data.id} item={i}/>}) : filteredData.map(i=>{ return <Item  key ={filteredData.id} item={i}/>})}
+                { tipoDeFiltro==="Home" ? data.map(i=>{ return <Item  key ={data.id} item={i}/>}) : filteredData.map(i=>{ return <Item  key ={filteredData.id} item={i}/>})}
                 </tbody>
              </table>
-            <ItemDetailsContainer/>
         </div>
     )
 }

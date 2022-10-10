@@ -14,3 +14,9 @@
     color: rgb(50, 50, 50);
     border: 1px solid black;
     }
+
+.NavLink {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    }
