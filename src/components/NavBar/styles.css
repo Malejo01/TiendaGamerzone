@@ -77,6 +77,11 @@ a{
     height: auto;
 }
 
+.itemTotal {
+    color: white;
+    background-color:black;
+    border-radius: 100%;
+}
 /*
 @media(min-width:768px) {
     .burguer {

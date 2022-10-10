@@ -4,6 +4,7 @@ import ItemDetailsContainer from '../ItemDetailsContainer/ItemDetailsContainer';
 import "./styles.css"
 
 export default function Detalles () {
+    
     return (
         <div>
             <Navbar/>

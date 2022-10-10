@@ -26,8 +26,6 @@ function Item({item}) {
          alert("Lo sentimos ya no queda stock de ese producto")
         }
     }
-
-
     return (
         <tr className="items">
                 <td><img src={item.imagen} alt="Imagen Producto" className="imagenProducto"></img></td>
@@ -41,9 +39,9 @@ function Item({item}) {
                 <td className="botonQuitar">
                     <input value ="+"type="submit" onClick={() => agregarAlContador()}/></td>
                 <td className="botonCarrito">
-                    <input value ="Comprar"type="submit" onClick={() => agregarAlCarrito()}/>
+                    <input value ="Añadir"type="submit" onClick={() => agregarAlCarrito()}/>
                     <button>
-                    <NavLink to={`/detalles/${item}`} className="NavLink">Ver Detalles</NavLink>    
+                    <NavLink to={`/detalles/${item.id}`} className="NavLink">Ver Detalles</NavLink>    
                     </button></td>
         </tr>
     )

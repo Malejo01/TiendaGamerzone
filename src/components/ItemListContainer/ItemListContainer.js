@@ -13,9 +13,6 @@ function ItemListContainer({tipoDeFiltro}) {
     .then((resp)=>setData(resp))
     .catch(err=>console.log(err))
     .finally(()=>setLoading(false))
-
-    console.log("Llego a item list container", (tipoDeFiltro))
-
   },[])
     return (
         <div className='itemListContainer'>

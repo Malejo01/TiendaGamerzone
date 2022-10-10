@@ -5,8 +5,6 @@ import "./styles.css"
 function ItemList ({data, tipoDeFiltro}) {
     //filtro segun el tipo de pagina 
     let filteredData = data.filter (data => data.tipo === tipoDeFiltro)
-    //logeo los datos recibidos
-    console.log("llego al itemList", (tipoDeFiltro)," y ", {filteredData}," y ", {data})
     return (
         <div className='ItemList'>
             <h3> {tipoDeFiltro}</h3>
