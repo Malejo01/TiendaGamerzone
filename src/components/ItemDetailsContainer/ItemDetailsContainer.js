@@ -1,8 +1,11 @@
+
 import React from 'react'
 import {useEffect, useState} from "react"
 import {useParams} from 'react-router-dom'
+import Carousel from '../Carousel/Carousel';
 import getFetch from '../Data/data';
 import Navbar from '../NavBar/Navbar'
+import "./styles.css"
 
 function ItemDetailsContainer() {
     let {detallesId} = useParams()
@@ -22,9 +25,9 @@ function ItemDetailsContainer() {
     return (
         <div>
             <Navbar/>
+            <Carousel data={data}/>
             <h3> Esto es el Item Details Container</h3>
             <h1>{data.nombre}</h1>
-            <img src={data.imagen} alt="Imagen del producto "></img>
             <p>Precio: {data.precio} $USD</p>
             <p>Stock: {data.stock}</p>
             <p>Sobre el producto: {data.detalles}</p>
