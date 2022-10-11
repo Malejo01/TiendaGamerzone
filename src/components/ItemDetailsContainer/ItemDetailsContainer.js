@@ -26,7 +26,6 @@ function ItemDetailsContainer() {
         <div>
             <Navbar/>
             <Carousel data={data}/>
-            <h3> Esto es el Item Details Container</h3>
             <h1>{data.nombre}</h1>
             <p>Precio: {data.precio} $USD</p>
             <p>Stock: {data.stock}</p>
