@@ -23,12 +23,13 @@ function ItemDetailsContainer() {
         <div>
             <Navbar/>
             <h3> Esto es el Item Details Container</h3>
-            <p>{data.precio}</p>
-            <img src={data.imagen} alt="Imagen del producto"></img>
-            <p>{data.stock}</p>
-            <p>{data.detalles}</p>
-            <p>{data.color1}</p>
-            <p>{data.color2}</p>
+            <h1>{data.nombre}</h1>
+            <img src={data.imagen} alt="Imagen del producto "></img>
+            <p>Precio: {data.precio} $USD</p>
+            <p>Stock: {data.stock}</p>
+            <p>Sobre el producto: {data.detalles}</p>
+            <p>Variante 1: {data.color1}</p>
+            <p>Variante 2: {data.color2}</p>
         </div>
     )
 }
