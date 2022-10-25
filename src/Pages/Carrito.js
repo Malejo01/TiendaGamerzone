@@ -1,12 +1,15 @@
 import React from 'react'
+import CartListItem from '../components/CartListItem/CartListItem';
 import Navbar from '../components/NavBar/Navbar';
+
 
 function Carrito() {
     return (
-        <div>
+        <main className="display-page">
             <Navbar/>
-            <h1>Aqui veras los productos de tu carrito</h1>
-        </div>
+            <h1>Tu carrito de compras</h1>
+            <CartListItem/>
+        </main>
     )
 }
 

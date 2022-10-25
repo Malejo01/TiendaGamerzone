@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router';
 import { useState } from 'react';
 import "./styles.css" ;
 
@@ -7,7 +6,6 @@ const ItemCount = ({ initial, stock, onAdd }) => {
   //hook de estado
   const [quantity, setQty] = useState(initial);
 
-  let history = useNavigate();
 
   const addProduct = (num) => {
     setQty(quantity + num);

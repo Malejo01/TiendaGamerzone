@@ -8,8 +8,7 @@ import "./styles.css" ;
 function Item({item}) {
     const [stock, setStock] = useState(item.stock)
     const cartContext =useContext(CartContext)
-    const {cart,addToCart} = cartContext;
-    const [quantity,setQuantity] = useState(quantity)
+    const {cart,addToCart} = cartContext
     
     const onAdd= (quantity) => {
         if(item.stock>=quantity){
