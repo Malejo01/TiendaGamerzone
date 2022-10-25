@@ -15,6 +15,7 @@ function Item({item}) {
             addToCart(item.quantity)
             item.stock=item.stock-quantity
             setStock(item.stock-quantity)
+            console.log(cart)
         } else {
             alert("No se puede agregar esa cantidad al carrito")
         }

@@ -23,9 +23,22 @@ const CartProvider=(props) => {
         }
     }
 
+
+    const deleteCartById = ( id ) => {
+        const newCart = [...cart];
+        let index = newCart.findIndex(el => el.id === id);
+        
+        newCart.splice( index, 1 );
+
+        setCart([...newCart]);
+    }
+
+    const deleteCart = () => {
+        setCart([]);
+    }
     
     return (
-        <CartContext.Provider value ={{cart,setCart, addToCart,}}>
+        <CartContext.Provider value ={{cart,setCart, addToCart, deleteCartById, deleteCart}}>
         {props.children}
         </CartContext.Provider>
     )
