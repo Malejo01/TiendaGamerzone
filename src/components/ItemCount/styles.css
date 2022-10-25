@@ -46,3 +46,7 @@
     width: 180px;
     padding: 6px 12px ;
   }
+
+  .button-primary{
+    background-color: var(--color2);
+  }

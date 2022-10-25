@@ -8,6 +8,7 @@
     position: relative;
     width:300px;
     text-align: center;
+    background-color: white;
 }
 
 .cart-item__delete{
@@ -24,8 +25,9 @@
 
 .cart-item__img{
     background-color: var(--just-white);
-    width: 80%;
+    width: auto;
     height: 240px;
+    border-color: black;
 }
 
 .cart-item__img img{

@@ -7,7 +7,7 @@ function Carrito() {
     return (
         <main className="display-page">
             <Navbar/>
-            <h1>Tu carrito de compras</h1>
+            <h2>Tu carrito de compras</h2>
             <CartListItem/>
         </main>
     )

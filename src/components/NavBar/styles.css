@@ -1,6 +1,11 @@
+.barraDeNavegacion{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
 .TituloPagina{
     font-weight: 400;
-    color: #fff;
+    color: var(--color2);
     padding-left: 1rem;
 }
 
@@ -10,14 +15,14 @@ h1 span {
 
 .Navbar {
     padding: .3rem;
-    background-color: #333;
+    background-color: var(--color4);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 a{
-    color: white;
+    color: var(--color2);
     text-decoration: none;
     margin-right: 1rem;
 }
@@ -28,6 +33,7 @@ a{
     text-align: center;
     color:white;
     transition: all .6s ease;
+    text-decoration: none;
 }
 
 .links.active {

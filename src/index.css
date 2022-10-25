@@ -1,3 +1,19 @@
+:root {
+  /*fonts*/
+  --catamaran-font: 'Catamaran', sans-serif;
+  --mulish-font: 'Mulish', sans-serif;
+  /*colors*/
+  --color1: #FFBD00;
+  --color2: #F26419;
+  --color3: #5863F8;
+  --color4: #010001;
+  --border-color: #EBFCFB;
+  --success-color: #4f8a10;
+  --error-color: #d8000c;
+  --info-color: #31708f;
+  --white: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -1,5 +1,6 @@
 import React from 'react';
-
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './styles.css';
 function CartItem({ item, deleteCartById }) {
@@ -7,6 +8,7 @@ function CartItem({ item, deleteCartById }) {
     return (
         <article className="cart-item-card">
             <div className="cart-item__delete" onClick={()=>deleteCartById(item.id)}>
+            <FontAwesomeIcon icon={faTimes} color={'#1d1d1d'} size={'1x'}/>
             </div>
             <div className="cart-item__img">
                 <img src={item.imagen} alt="Imagen"/>

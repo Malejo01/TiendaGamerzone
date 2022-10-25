@@ -12,8 +12,8 @@ function Navbar() {
     }
     return (
         <div className='Navbar'>
-            <a href='/'><h1 className='TituloPagina'>Gamer<span>Zone</span></h1></a>
-            <div>
+            <Link to={'/'}><h1 className='TituloPagina'>Gamer<span>Zone</span></h1></Link>
+            <div className='barraDeNavegacion'>
                 <Link to='/'>Home</Link>
                 <Link to='/Juegos'>Juegos</Link>
                 <Link to='/Consolas'>Consolas</Link>

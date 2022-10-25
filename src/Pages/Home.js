@@ -8,7 +8,7 @@ export default function Home () {
     return (
         <div>
             <Navbar/>
-            <h1>Tu mejor tienda de videojuegos</h1>
+            <h2>Tu mejor tienda de videojuegos</h2>
             <ItemListContainer tipoDeFiltro={tipoDeFiltro}/>
         </div>
     )

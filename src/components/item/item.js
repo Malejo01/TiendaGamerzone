@@ -29,8 +29,8 @@ function Item({item}) {
                 <td className="precioProducto"><p>{item.precio}</p></td>
                 <td className="stockProducto"> <p>Disponibles: {item.stock}</p></td>
                 <td> <ItemCount stock={item.stock} initial={1} onAdd={onAdd}></ItemCount></td>
-                <td> <button>
-                    <NavLink to={`/detalles/${item.id}`} className="NavLink">Ver Detalles</NavLink>    
+                <td> <button className="NavLink">
+                    <NavLink to={`/detalles/${item.id}`} className="letraNavBar" >Ver Detalles</NavLink>    
                     </button>
                 </td>
         </tr>

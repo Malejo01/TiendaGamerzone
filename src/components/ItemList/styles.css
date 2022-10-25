@@ -1,5 +1,6 @@
 .ItemList {
-    background-color:#fff;
+    background-color:var(--color4);
+    color: var(--white);
     display: flex;
     align-content:center;
     flex-direction: column;
@@ -7,7 +8,9 @@
     width: 60%;
     padding: 10px;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid var(--color4);
+    border-radius: 30px;
+
     }
     
     

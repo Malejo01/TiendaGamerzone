@@ -6,7 +6,7 @@ function Contacto() {
     return (
         <div>
         <Navbar/>
-        <h1>Ponte en contacto con nosotros</h1>
+        <h2>Ponte en contacto con nosotros</h2>
         <p>Aqui viene un formulario mamalon</p>
         </div>
     )
