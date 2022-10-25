@@ -1,18 +1,25 @@
-.imagenProducto {
-    width: 80px;
-    height: 80px;
-}
-
 .items {
     background-color: var(--white);
     display: flex;
     align-content:center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px;
     padding: 0px;
-    text-decoration: none;
     color: rgb(50, 50, 50);
     border: 1px solid black;
+    border-radius: 10px;
+    }
+
+    .items p {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+.imagenProducto {
+        width: 6rem;
+        height: 6rem;
     }
 
 .NavLink {
@@ -20,9 +27,13 @@
     text-align: center;
     color: black;
     background-color: var(--color2);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.85);
     }
 
-    .letraNavBar{
+.letraNavBar{
         text-decoration: none;
         text-align: center;
         color: black;

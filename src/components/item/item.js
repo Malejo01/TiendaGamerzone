@@ -26,8 +26,8 @@ function Item({item}) {
         <tr className="items">
                 <td><img src={item.imagen} alt="Imagen Producto" className="imagenProducto"></img></td>
                 <td className="nombreProducto"> <p>{item.nombre}</p></td>
-                <td className="precioProducto"><p>{item.precio}</p></td>
-                <td className="stockProducto"> <p>Disponibles: {item.stock}</p></td>
+                <td className="precioProducto"><p>$ {item.precio}</p></td>
+                <td className="stockProducto"> <p>Stock: {item.stock}</p></td>
                 <td> <ItemCount stock={item.stock} initial={1} onAdd={onAdd}></ItemCount></td>
                 <td> <button className="NavLink">
                     <NavLink to={`/detalles/${item.id}`} className="letraNavBar" >Ver Detalles</NavLink>    

@@ -14,11 +14,11 @@ function Navbar() {
         <div className='Navbar'>
             <Link to={'/'}><h1 className='TituloPagina'>Gamer<span>Zone</span></h1></Link>
             <div className='barraDeNavegacion'>
-                <Link to='/'>Home</Link>
-                <Link to='/Juegos'>Juegos</Link>
-                <Link to='/Consolas'>Consolas</Link>
-                <Link to='/Accesorios'>Accesorios</Link>
-                <Link to='/Contacto'>Contacto</Link>
+                <Link to='/' className='link'>Home</Link>
+                <Link to='/Juegos' className='link'>Juegos</Link>
+                <Link to='/Consolas' className='link'>Consolas</Link>
+                <Link to='/Accesorios' className='link'>Accesorios</Link>
+                <Link to='/Contacto' className='link'>Contacto</Link>
                 <CartWidget/>
             </div>
             <div className='burguer'>
