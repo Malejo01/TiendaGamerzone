@@ -12,7 +12,7 @@ function Item({item}) {
     
     const onAdd= (quantity) => {
         if(item.stock>=quantity){
-            addToCart(item.quantity)
+            addToCart(item,quantity)
             item.stock=item.stock-quantity
             setStock(item.stock-quantity)
             console.log(cart)

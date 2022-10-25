@@ -1,9 +1,11 @@
-import React, {createContext, useState} from "react";
+import React, { createContext, useState } from "react";
 
-export const CartContext=createContext(null);
 
-const CartProvider=(props) => {
-    const [cart,setCart] =useState([])
+export const CartContext = createContext(null);
+
+const CartProvider = (props) => {
+
+    const [cart, setCart] = useState([]);
 
     const addToCart = (item, quantity) => {
         if(cart.some(el => el.id === item.id)){
@@ -23,7 +25,6 @@ const CartProvider=(props) => {
         }
     }
 
-
     const deleteCartById = ( id ) => {
         const newCart = [...cart];
         let index = newCart.findIndex(el => el.id === id);
@@ -36,12 +37,21 @@ const CartProvider=(props) => {
     const deleteCart = () => {
         setCart([]);
     }
-    
-    return (
-        <CartContext.Provider value ={{cart,setCart, addToCart, deleteCartById, deleteCart}}>
-        {props.children}
+
+
+    return(
+        <CartContext.Provider 
+            value={{ 
+                        cart, 
+                        setCart,
+                        addToCart,
+                        deleteCartById,
+                        deleteCart, 
+                   }}
+        >
+            {props.children}
         </CartContext.Provider>
     )
 }
 
-export default CartProvider
+export default CartProvider;
