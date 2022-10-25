@@ -1,8 +1,8 @@
 import React, {useState}from 'react'
 import BurguerIcon from '../BurguerIcon/BurguerIcon'
-import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom';
 import "./styles.css"
+import CartWidget from '../CartWidget/CartWidget';
 
 function Navbar() {
     const [clicked,setClicked] = useState (false)
@@ -20,7 +20,6 @@ function Navbar() {
                 <Link to='/Accesorios'>Accesorios</Link>
                 <Link to='/Contacto'>Contacto</Link>
                 <CartWidget/>
-                <span className='itemTotal'>0</span>
             </div>
             <div className='burguer'>
             <BurguerIcon clicked={clicked} handleClick={handleClick}/>

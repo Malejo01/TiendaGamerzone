@@ -5,13 +5,25 @@ export const CartContext=createContext(null);
 const CartProvider=(props) => {
     const [cart,setCart] =useState([])
 
-    function addToCart (item,quantity) {
-        let product ={...item,quantity};
-        setCart([...cart, product]);
+    const addToCart = (item, quantity) => {
+        if(cart.some(el => el.id === item.id)){
+            
+            let index = cart.findIndex(el => el.id === item.id);
+            let product = cart[index];
+            product.quantity = product.quantity + quantity;
 
-        console.log(cart)
+            const newCart = [...cart];
+            newCart.splice( index, 1, product );
+
+            setCart([ ...newCart ]);
+
+        }else{
+            let product = {...item, quantity};
+            setCart([...cart, product ]);
+        }
     }
 
+    
     return (
         <CartContext.Provider value ={{cart,setCart, addToCart,}}>
         {props.children}
