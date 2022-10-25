@@ -2,62 +2,37 @@ import React, { useContext }  from 'react'
 import {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import { CartContext } from '../Context/CartContext';
-import ItemCount from "../ItemCount/itemCount";
-
-import carrito from '../Image/cart-plus.svg'
-import "./styles.css" 
+import ItemCount from '../ItemCount/itemCount';
+import "./styles.css" ;
 
 function Item({item}) {
     const [stock, setStock] = useState(item.stock)
-    const [contador, setContador] = useState(1);
-
-    const cartContext = useContext(CartContext)
-    // cuando coloco esta linea me da un error renderizando la pagina-----------------------------------------
-    //const {cart,agregarAlCarrito} = cartContext;
-    //console.log(agregarAlCarrito)
-    // -------------------------------------------------------------------------------------------------------
+    const cartContext =useContext(CartContext)
+    const {cart,addToCart} = cartContext;
+    const [quantity,setQuantity] = useState(quantity)
+    
+    const onAdd= (quantity) => {
+        if(item.stock>=quantity){
+            addToCart(item,quantity)
+            item.stock=item.stock-quantity
+            setStock(item.stock-quantity)
+        } else {
+            alert("No se puede agregar esa cantidad al carrito")
+        }
+    }
     
 
-
-
-    //----------------------------funciones de contador
-    function agregarAlContador () {
-        contador<stock ? setContador(contador + 1): alert("Lo sentimos no disponemos de mas unidades de ese producto");
-    }
-
-    function quitarAlContador () {
-        contador<=1 ? alert("Lo has gastao al boton che!") : setContador(contador - 1);
-    }
-/*
-    function agregarAlCarrito () {
-        if (item.stock-contador>=0) {
-            item.stock=item.stock-contador
-            setStock(item.stock-1)
-            console.log("itemStock: "+item.stock+" contador: "+ contador)
-        }
-        else {
-         alert("Lo sentimos ya no queda stock de ese producto")
-        }
-    }
-*/
     return (
         <tr className="items">
                 <td><img src={item.imagen} alt="Imagen Producto" className="imagenProducto"></img></td>
                 <td className="nombreProducto"> <p>{item.nombre}</p></td>
                 <td className="precioProducto"><p>{item.precio}</p></td>
                 <td className="stockProducto"> <p>Disponibles: {item.stock}</p></td>
-                <td className="botonAgregar">
-                    <input value ="-"type="submit" onClick={() => quitarAlContador()}/></td>
-                <td>
-                    <p> <img src={carrito} alt="imagen del carrito"></img>
-                    </p></td>        
-                <td className="botonQuitar">
-                    <input value ="+"type="submit" onClick={() => agregarAlContador()}/></td>
-                <td className="botonCarrito">
-                    <input value ="Añadir"type="submit" onClick={() => agregarAlCarrito()}/>
-                    <button>
+                <td> <ItemCount stock={item.stock} initial={1} onAdd={onAdd}></ItemCount></td>
+                <td> <button>
                     <NavLink to={`/detalles/${item.id}`} className="NavLink">Ver Detalles</NavLink>    
-                    </button></td>
+                    </button>
+                </td>
         </tr>
     )
 }
@@ -66,14 +41,6 @@ export default Item
 
 
 /*
-function agregarAlCarrito () {
-        if (item.stock-contador>=0) {
-            item.stock=item.stock-contador
-            setStock(item.stock-1)
-            console.log("itemStock: "+item.stock+" contador: "+ contador)
-        }
-        else {
-         alert("Lo sentimos ya no queda stock de ese producto")
-        }
-    }
+To do 
+la cantidad debe reiniciarse a 1 cuando se agregan productos al carrito
 */

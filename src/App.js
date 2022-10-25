@@ -8,11 +8,13 @@ import Carrito from './Pages/Carrito';
 import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import CartProvider from './components/Context/CartContext';
 
 
 function App() {
 
   return (
+    <CartProvider>
     <BrowserRouter>
       <div className="App">
       <Routes>
@@ -27,6 +29,7 @@ function App() {
         
       </div>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 
