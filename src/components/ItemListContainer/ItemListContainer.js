@@ -26,7 +26,7 @@ function ItemListContainer({tipoDeFiltro}) {
     return (
         <div className='itemListContainer'>
             {
-        loading ? <h2>Cargando por favor espere</h2> :
+        loading ? <h2 className='cargando'>Cargando por favor espere</h2> :
         <ItemList data={data} tipoDeFiltro={tipoDeFiltro}/>
       }
         </div>
