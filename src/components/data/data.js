@@ -149,7 +149,7 @@ const data = [
     - Marca alternativa de excelente calidad.`,
     color1:"blanco",
     color2:"negro"
-  },
+  },  
   {
     id: 8,
     tipo: "Accesorios",
