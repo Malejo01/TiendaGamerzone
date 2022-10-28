@@ -5,6 +5,23 @@ import "./styles.css"
 
 export default function Consolas () {
     let tipoDeFiltro = "Consolas"
+    const[loading,setLoading]=useState(true)
+    const[data,setData]=useState([])
+
+  
+    useEffect(() =>{
+      const db = getFirestore()
+      const data = collection(db,'Consolas')
+      getDocs(data)
+        .then((value)=>{ setData (value.docs.map((value)=>{
+          return value.data()
+        }))
+      })
+      .catch(err=>console.log(err))
+      .finally(()=>setLoading(false))
+    },[])
+
+
     return (
         <div>
             <Navbar/>
