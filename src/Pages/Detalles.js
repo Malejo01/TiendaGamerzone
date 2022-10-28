@@ -8,7 +8,6 @@ export default function Detalles () {
     return (
         <div>
             <Navbar/>
-            <h2>Tu mejor tienda de videojuegos</h2>
             <ItemDetailsContainer/>
         </div>
     )

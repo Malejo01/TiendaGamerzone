@@ -21,7 +21,7 @@ function CartListItem() {
                             className="button-primary button-padding"
                             onClick={deleteCart}
                       >Vaciar Carrito</button>)
-                         : <p>No hay productos en el carrito</p>
+                         : <h3>No hay productos en el carrito</h3>
             }
         </section>
     )

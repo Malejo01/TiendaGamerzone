@@ -10,7 +10,8 @@
     text-decoration: none;
     border: 2px solid var(--color4);
     border-radius: 30px;
-
+    position: relative;
+    z-index: 2;
     }
     
     

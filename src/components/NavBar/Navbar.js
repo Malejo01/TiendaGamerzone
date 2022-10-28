@@ -11,6 +11,7 @@ function Navbar() {
         setClicked(!clicked)
     }
     return (
+        <div className='fixed'>
         <div className='Navbar'>
             <Link to={'/'}><h1 className='TituloPagina'>Gamer<span>Zone</span></h1></Link>
             <div className='barraDeNavegacion'>
@@ -25,6 +26,11 @@ function Navbar() {
             <BurguerIcon clicked={clicked} handleClick={handleClick}/>
             </div>
             <div className={`BgDiv initial ${clicked ?`active` : ``}`}></div>
+        </div>
+        <h2>Tu mejor tienda de videojuegos</h2>
+        <video muted autoPlay loop>
+            <source src='https://cdn-animation.artstation.com/p/video_sources/000/016/909/rog.mp4' type='video/mp4'></source>
+        </video>
         </div>
         
     )
