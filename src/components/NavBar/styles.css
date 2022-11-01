@@ -6,12 +6,12 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    z-index: 30;
+    z-index: 20;
 }
 
 .fixed {
     top: 0vh;
-    position: fixed;
+    position: sticky;
     width: 100%;
 }
 
@@ -112,18 +112,7 @@ h2 {
     border: 5px white;
 }
 
-video{
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    mix-blend-mode: overlay;
-    z-index: 10;
-}
+
 /*
 @media(min-width:768px) {
     .burguer {

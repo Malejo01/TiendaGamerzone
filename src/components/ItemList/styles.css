@@ -5,13 +5,11 @@
     align-content:center;
     flex-direction: column;
     margin: 20px auto;
-    width: 60%;
+    width: 55%;
     padding: 10px;
     text-decoration: none;
     border: 2px solid var(--color4);
     border-radius: 30px;
-    position: relative;
-    z-index: 20;
     }
     
     

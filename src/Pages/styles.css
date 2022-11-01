@@ -10,7 +10,6 @@ h1{
 }
 
 .aviso{
-    margin-top: 6.65rem;
     position: relative;
     z-index: 20;
     display: flex;
@@ -21,6 +20,3 @@ h1{
     font-weight:700;
 }
 
-h2 {
-    width: 100vw;
-}

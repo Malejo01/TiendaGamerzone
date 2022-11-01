@@ -1,7 +1,5 @@
-.detallesDelProducto{
-    display: grid;
-    grid-template-areas: "one one two two"
-                        "one one two two"
-                        "three three four four"
-                        "three three four four";
-}
+.itemDetailsContainer{
+    background-color: var(--white);
+    margin-top: 5.5rem;
+    padding: 1rem;
+    }
