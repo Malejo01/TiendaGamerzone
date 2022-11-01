@@ -28,9 +28,7 @@ function Navbar() {
             <div className={`BgDiv initial ${clicked ?`active` : ``}`}></div>
         </div>
         <h2>Tu mejor tienda de videojuegos</h2>
-        <video muted autoPlay loop>
-            <source src='https://cdn-animation.artstation.com/p/video_sources/000/016/909/rog.mp4' type='video/mp4'></source>
-        </video>
+        
         </div>
         
     )

@@ -21,7 +21,7 @@ function ItemDetailsContainer() {
   
 
     return (
-        <div>
+        <div className='itemDetailsContainer'>
             <Navbar/>
             <div className='detallesDelProducto'>
             <Carousel data={data} className="one"/>
