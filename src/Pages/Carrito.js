@@ -8,7 +8,7 @@ function Carrito() {
         <main className="display-page">
             <Navbar/>
             <div className='aviso'>
-            <h2>Tu carrito de compras</h2>
+            <h2 className='tucarrito'>Tu carrito de compras</h2>
             </div>
             <CartListItem/>
         </main>

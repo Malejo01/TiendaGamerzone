@@ -6,3 +6,12 @@ background-color:transparent;
 h1{
     color: white;
 }
+
+.cargando{
+    color: var(--color4);
+    font-size: 1.8rem;
+    background-image: radial-gradient(circle at -1.09% 26.18%, #e7f086 0, #ebe374 12.5%, #eed662 25%, #f0c64f 37.5%, #f2b53c 50%, #f4a32b 62.5%, #f69120 75%, #f87f1d 87.5%, #fb6c20 100%);
+    border: 5px white;
+    margin: 0;
+    padding: 0;
+}

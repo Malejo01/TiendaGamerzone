@@ -1,12 +1,27 @@
 form {
-    width: 35vw;
-    height: 75vh;
-    margin: 2rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position:relative;
-    z-index: 20;
-    background-color: black;
+    color: var(--white);
+}
+
+.pContacto{
+    color: var(--white);
+}
+
+
+.formularioDeContacto {
+    background-color: var(--color4);
+    margin-top: 3rem;
+    padding: 3rem;
+    border: 10px solid var(--color2);
+    border-radius: 20px;
+}
+
+.botonEnviar{
+    background-color: var(--color2);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.botonEnviar:hover{
+    background-color:darkblue;
+    color: white;
 }

@@ -27,7 +27,7 @@ function Navbar() {
             </div>
             <div className={`BgDiv initial ${clicked ?`active` : ``}`}></div>
         </div>
-        <h2>Tu mejor tienda de videojuegos</h2>
+        <h2 className='TituloNavBar'>Tu mejor tienda de videojuegos</h2>
         
         </div>
         
