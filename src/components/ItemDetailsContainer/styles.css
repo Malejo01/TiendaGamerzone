@@ -1,6 +1,23 @@
 .itemDetailsContainer{
-    background-color: var(--color4);
-    width: 70vw;
+    background-color: var(--white);
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+    "a a b"
+    "a a b";
     }
+
+.contenedorIzquierdo {
+    grid-area: a;
+    color: var(--color2);
+}
+.contenedorDerecho{
+    grid-area: b;
+    color:black;
+}

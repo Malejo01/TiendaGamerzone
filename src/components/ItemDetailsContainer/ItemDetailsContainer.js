@@ -24,19 +24,23 @@ function ItemDetailsContainer() {
       <div>
       <Navbar/>
         <div className='itemDetailsContainer'>
+          <div className='contenedorIzquierdo'>
             <div className='detallesDelProducto'>
-            <Carousel data={data} className="one"/>
-            <div className='two'>
-            <h1 className='Nombre' >{data.nombre}</h1>
+            <Carousel data={data}/>
+            <div>
+            <h1 className='nombre' >{data.nombre}</h1>
             <p className='precio'>Precio: {data.precio} $USD</p>
             </div>
-            <p className='detalles three'>Sobre el producto: {data.detalles}</p>
-            <div className='four'>
+          </div>
+          <div className='contenedorDerecho'>
+            <p className='detalles'>Sobre el producto: {data.detalles}</p>
+            <div>
             <p className='color'>Variante 1: {data.color1}</p>
             <p className='color'>Variante 2: {data.color2}</p>
             <p className='stock'>Stock: {data.stock}</p>
             <ItemCount stock={data.stock} initial={1}></ItemCount>
             </div>
+          </div>
             </div>
         </div>
         </div>
