@@ -21,8 +21,9 @@ function ItemDetailsContainer() {
   
 
     return (
+      <div>
+      <Navbar/>
         <div className='itemDetailsContainer'>
-            <Navbar/>
             <div className='detallesDelProducto'>
             <Carousel data={data} className="one"/>
             <div className='two'>
@@ -37,6 +38,7 @@ function ItemDetailsContainer() {
             <ItemCount stock={data.stock} initial={1}></ItemCount>
             </div>
             </div>
+        </div>
         </div>
     )
 }

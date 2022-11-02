@@ -7,8 +7,8 @@ function Contacto() {
     return (
         <div>
         <Navbar/>
+        <h2>Ponte en contacto con nosotros</h2>
             <div className='aviso'>
-                <h3>Ponte en contacto con nosotros</h3>
                 <Contact></Contact>
             </div>
         </div>

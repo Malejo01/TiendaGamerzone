@@ -12,13 +12,13 @@ function Carousel({data}) {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={data.imagen} className="a-block w-50 " alt="..." style={{maxWidth:"900px",maxHeight:"600px"}}/>
+      <img src={data.imagen} className="a-block w-50 " alt="..." style={{maxWidth:"500px",maxHeight:"500px"}}/>
     </div>
     <div className="carousel-item">
-      <img src={data.imagen2} className="a-block w-50 " alt="..."style={{maxWidth:"900px",maxHeight:"600px"}} />
+      <img src={data.imagen2} className="a-block w-50 " alt="..."style={{maxWidth:"500px",maxHeight:"500px"}} />
     </div>
     <div className="carousel-item">
-      <img src={data.imagen3} className="a-block w-50 " alt="..." style={{maxWidth:"900px",maxHeight:"600px"}}/>
+      <img src={data.imagen3} className="a-block w-50 " alt="..." style={{maxWidth:"500px",maxHeight:"500px"}}/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
