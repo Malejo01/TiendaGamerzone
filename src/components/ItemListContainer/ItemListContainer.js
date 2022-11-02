@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react';
-import getFetch from '../Data/data';
+//import getFetch from '../Data/data';
 import {getFirestore, collection, getDocs} from 'firebase/firestore'
 import "./styles.css"
 

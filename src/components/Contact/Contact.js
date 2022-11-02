@@ -2,6 +2,11 @@ import React from 'react'
 import "./styles.css"
 
 function Contact() {
+
+    function validateForm() {
+        
+    }
+    
     return (
       <div className='formularioDeContacto'>
       <section className="mb-4">
@@ -57,8 +62,7 @@ function Contact() {
                   </form>
       
                   <div className="text-center text-md-left">
-                      <a className="btn botonEnviar" 
-                      //onclick="document.getElementById('contact-form').submit();"
+                      <a className="btn botonEnviar" onClick={validateForm()}
                       >Enviar</a>
                   </div>
                   <div className="status"></div>

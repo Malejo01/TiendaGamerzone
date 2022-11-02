@@ -15,8 +15,8 @@ function CartItem({ item, deleteCartById }) {
             </div>
             <h2 className="cart-item__name">{item.nombre}</h2>
             <span className="cart-item__price">${item.precio}</span>
-            <span className="cart-item__qty"><strong>Cantidad: </strong> {item.quantity}</span>
-            <span className="cart-item__qty"><strong>Subtotal: </strong> ${item.quantity * item.precio}</span>
+            <span className="cart-item__qty"> <strong>Cantidad: </strong> {item.quantity} </span>
+            <span className="cart-item__qty"> <strong>Subtotal: </strong> ${item.quantity * item.precio} </span>
         </article>
     )
 }
