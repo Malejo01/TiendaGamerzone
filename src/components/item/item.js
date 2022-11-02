@@ -10,25 +10,24 @@ function Item({item}) {
     const cartContext =useContext(CartContext)
     const {cart,addToCart} = cartContext
     
-    const onAdd= (quantity) => {
-        if(item.stock>=quantity){
-            addToCart(item,quantity)
-            item.stock=item.stock-quantity
-            setStock(item.stock-quantity)
-            console.log(cart)
-        } else {
-            alert("No se puede agregar esa cantidad al carrito")
-        }
-    }
     
-
+function onAdd(quantity) {
+    if(item.stock>=quantity){
+        addToCart(item,quantity)
+        item.stock=item.stock-quantity
+        setStock(item.stock-quantity)
+        console.log(cart)
+    } else {
+        alert("No se puede agregar esa cantidad al carrito")
+    }
+}
     return (
         <tr className="items">
                 <td><img src={item.imagen} alt="Imagen Producto" className="imagenProducto"></img></td>
                 <td className="nombreProducto"> <p>{item.nombre}</p></td>
                 <td className="precioProducto"><p>$ {item.precio}</p></td>
                 <td className="stockProducto"> <p>Stock: {item.stock}</p></td>
-                <td> <ItemCount stock={item.stock} initial={1} onAdd={onAdd}></ItemCount></td>
+                <td> <ItemCount item={item} stock={item.stock} initial={1} onAdd={onAdd} ></ItemCount></td>
                 <td> <button className="NavLink">
                     <NavLink to={`/detalles/${item.id}`} className="letraNavBar" >Ver Detalles</NavLink>    
                     </button>
