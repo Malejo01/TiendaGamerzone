@@ -17,10 +17,13 @@ function CartListItem() {
                 }))
                   : <p>cargando productos</p>
             }
-            {cart.length ? (<button 
-                            className="button-primary button-padding"
-                            onClick={deleteCart}
-                      >Vaciar Carrito</button>)
+            {cart.length ? (
+                    <div>
+                        
+                    <button className="button-primary button-padding" onClick={deleteCart}>Vaciar Carrito</button>
+                    <button className="button-primary button-padding" onClick={deleteCart}>Finalizar</button>
+                    </div>
+                      )
                          : <h2 className='avisoCarrito'>No hay productos en el carrito &#128528;</h2>
                         
             }

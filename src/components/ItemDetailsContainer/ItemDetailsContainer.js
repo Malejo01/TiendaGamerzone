@@ -1,16 +1,21 @@
 
 import React from 'react'
-import {useEffect, useState} from "react"
+import {useEffect, useState, useContext} from "react"
+import { CartContext } from '../Context/CartContext';
 import {useParams} from 'react-router-dom'
 import Carousel from '../Carousel/Carousel';
-import getFetch from '../Data/data';
+import getFetch from '../data/data';
 import ItemCount from '../ItemCount/itemCount';
 import Navbar from '../NavBar/Navbar'
 import "./styles.css"
 
-function ItemDetailsContainer() {
+function ItemDetailsContainer({item}) {
     let {detallesId} = useParams()
     const[data,setData]=useState([])
+
+    const [stock, setStock] = useState(data.stock)
+    const cartContext =useContext(CartContext)
+    const {cart,addToCart} = cartContext
 
 
   useEffect(()=> {
@@ -18,8 +23,18 @@ function ItemDetailsContainer() {
     .then((resp) => setData(resp.find((item) => item.id===Number(detallesId))))
     .catch(err=>console.log(err))
   },[detallesId])
-  
 
+  function onAdd(quantity) {
+    if(data.stock>=quantity){
+      addToCart(data,quantity)
+      data.stock-=quantity
+      setStock(data.stock-quantity)
+      console.log(cart)
+  } else {
+      alert("No se puede agregar esa cantidad al carrito")
+  }
+  }
+  
     return (
       <div>
       <Navbar/>
@@ -38,7 +53,7 @@ function ItemDetailsContainer() {
             <p className='color'>Variante 1: {data.color1}</p>
             <p className='color'>Variante 2: {data.color2}</p>
             <p className='stock'>Stock: {data.stock}</p>
-            <ItemCount stock={data.stock} initial={1}></ItemCount>
+            <ItemCount stock={data.stock} initial={1} onAdd={onAdd}></ItemCount>
             </div>
           </div>
             </div>

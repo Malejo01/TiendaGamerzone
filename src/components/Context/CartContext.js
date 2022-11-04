@@ -38,6 +38,8 @@ const CartProvider = (props) => {
         setCart([]);
     }
 
+    
+
 
     return(
         <CartContext.Provider 
